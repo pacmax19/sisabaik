@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SisaBaik membantu penyedia menawarkan makanan berlebih agar tetap bernilai, terjangkau, dan tidak terbuang">
+        <title>Daftar Penyedia | SisaBaik</title>
+    </head>
+    <body>
+        <a href="#konten-utama">Lewati ke konten utama</a>
+
+        <header>
+            <p><strong>SisaBaik</strong></p>
+            <nav aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="daftar-penyedia.html" aria-current="page">Daftar sebagai penyedia</a></li>
+                </a>
+            </li>
+            <li><a href="tawarkan-makanan.html">Tawarkan Makanan</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="konten-utama" tabindex="-1"
+        <h1>Daftar sebagai penyedia</h1>
+        <p>Isi formulir di bawah ini untuk mendaftar sebagai penyedia makanan berlebih.</p>
+    <p id="petunjuk-wajib"> kolom bertanda <strong> * </strong> wajib diisi</p>
+
+    <form
+    action=""daftar-penyedia.html" 
+    method="get"
+    aria-describedby="petunjuk-wajib"
+>
+<fieldset>
+    <legend>informasi usaha</legend>
+
+    <p>
+        <label for="nama-usaha">Nama usaha *</label><br>
+        <input 
+        type="text" 
+        id="nama-usaha" 
+        name="nama-usaha" 
+        autocomplete="organization"
+        minlength="3"
+        maxlength="100"
+        required
+        >
+    </p>
+
+    <p>
+        <label for="jenis-usaha">Jenis usaha *</label><br>
+        <select id="jenis-usaha" name="jenis-usaha" required>
+            <option value="">Pilih jenis usaha</option>
+            <option value="restoran">Restoran</option>
+            <option value="toko-roti">Toko Roti</option>
+            <option value="Katering">Katering</option>
+            <option value="ritel">ritel</option>
+            <option value="hotel">hotel atau penginapan</option>
+            <option value="lainnya">lainnya</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="deskripsi-usaha">Deskripsi usaha *</label><br>
+        <textarea
+        id="deskripsi-usaha"
+        name="deskripsi-usaha"
+        rows="5"   
+        maxlength="500"
+        aria-describedby="bantuan-deskripsi"
+        ></textarea><br>
+        </small> id="bantuan-deskripsi">
+            Tuliskan deskripsi singkat usaha Anda, misalnya jenis makanan yang ditawarkan, lokasi, dan jam operasional.
+        </small>
+    </p>
+</fieldset> 
+
+<fieldset>
+    <legend>Penanggung jawab</legend>
+
+    <p>
+        <label for="nama-penanggung-jawab">Nama penanggung jawab *</label><br>
+        <input 
+        type="text" 
+        id="nama-penanggung-jawab" 
+        name="nama-penanggung-jawab" 
+        autocomplete="name"
+        minlength="3"
+        maxlength="100"
+        required
+        >
+    </p>
+
+    <p>
+        <label for="email-penanggung-jawab">Email penanggung jawab *</label><br>
+        <input 
+        type="email" 
+        id="email-penanggung-jawab" 
+        name="email-penanggung-jawab" 
+        autocomplete="email"
+        maxlength="254"
+        aria-describedby="bantuan-email"
+        required
+        ><br>
+        <small id="bantuan-email">
+            Contoh: nama@usaha.example</small>
+    </p>
+
+    <p>
+        <label for="telepon-penanggung-jawab">Telepon penanggung jawab</label><br>
+        <input 
+        type="tel" 
+        id="telepon-penanggung-jawab" 
+        name="telepon-penanggung-jawab" 
+        autocomplete="tel"
+        inputmode="tel"
+        pattern="[0-9+()]{8,20}"
+        aria-describedby="bantuan-telepon"
+        required
+        ><br>
+        <small id="bantuan-telepon">
+            Contoh: +62 812 3456 7890</small>
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Lokasi usaha</legend>
+
+    <p>
+        <label for="alamat-usaha">Alamat usaha *</label><br>
+        <textarea
+        id="alamat-usaha"
+        name="alamat-usaha"
+        rows="4"  
+        autocomplete="street-address"
+        minlength="10" 
+        maxlength="250"
+        aria-describedby="bantuan-alamat"
+        required
+        ></textarea>
+    </p>
+
+    <p>
+        <label for="kota-usaha">Kota *</label><br>
+        <input 
+        type="text" 
+        id="kota-usaha" 
+        name="kota-usaha" 
+        autocomplete="address-level1"
+        maxlength="100"
+        required
+        >
+    </p>
+
+    <p>
+        <label for="kode-pos-usaha">Kode pos *</label><br>
+        <input 
+        type="text" 
+        id="kode-pos-usaha" 
+        name="kode-pos-usaha" 
+        autocomplete="postal-code"
+        pattern="[0-9]{5}"
+        aria-describedby="bantuan-kode-pos"
+        required
+        ><br>
+        <small id="bantuan-kode-pos">
+            Contoh: 12345</small>
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Persetujuan</legend>
+
+    <p>
+        <input 
+        type="checkbox" 
+        id="setuju-syarat" 
+        name="setuju-syarat" 
+        required
+        >
+        <label for="setuju-syarat">Saya menyetujui syarat dan ketentuan SisaBaik *
+        </label>
+    </p>
+</fieldset>
+
+<p>
+    <button type="submit">Kirim pendafataran</button>
+    <button type="reset">Bersihkan formulir</button>
+</p>
+</form>
+
+<section aria-labelledby="catatan-protipe">
+    <h2 id="catatan-protipe">Apa yang terjadi setelah tombol dikirim?</h2>
+    <p>
+        Browser akan menampilkan halaman konfirmasi bahwa pendaftaran telah diterima. Tim SisaBaik akan meninjau pendaftaran Anda dan menghubungi Anda melalui email atau telepon untuk langkah selanjutnya.
+    </p>
+    </section>
+</main>
+
+
+<footer>
+        <p>&copy; 2026 SisaBaik. Proyek pembelajaran Pengembangan Web.</p>
+        </footer>
+            <p>Pertanyaan tentang protiope : <a href="mailto:">email@sisabaik.example</a></p>
+        </address>
+    </footer>
+    </body>
+</html>
