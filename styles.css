@@ -61,7 +61,7 @@ h2 {
 
 h3 {
     margin-block-end: 0.6rem;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
 }
 
 a {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .container {
-    width: min(100% -2rem. var(--content-width));
+    width: min(100% - 2rem, var(--content-width));
     margin-inline: auto;
 }
 
@@ -121,7 +121,7 @@ a:hover {
 .nav-list {
     display: flex;
     flex-wrap: wrap;
-    gap 0.5rem 1 rem;
+    gap: 0.5rem 1rem;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -283,7 +283,7 @@ a:hover {
 
 .badge {
     display: inline-block;
-    width fit-content;
+    width: fit-content;
     margin-block-end: 0.75rem;
     padding: 0.25rem 0.6rem;
     border-radius : 999px;
@@ -300,13 +300,13 @@ a:hover {
 }
 
 .page-heading{
-    padding-block: clamp (2.5re, 7vw, 5rem) 2rem;
+    padding-block: clamp(2.5rem, 7vw, 5rem) 2rem;
 }
 
 .form-card {
     max-width: 56rem;
     margin-block-end: 3rem;
-    padding: clamp (1rem, 4vw, 2rem);
+    padding: clamp(1rem, 4vw, 2rem);
     border: 0.0625rem solid var(--color-border);
     border-radius: var(--radius-large);
     background: var(--color-surface);
