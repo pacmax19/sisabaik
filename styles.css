@@ -10,9 +10,9 @@
     --color-border: #cbd8d1;
     --color-danger: #a52a2a;
     --shadow-card: 0 0.5rem 1.5rem rgb(23 33 27 / 10%);
-    --radius-small: 0.5 rem;
-    --radius-medium: 0.9 rem;
-    --radius-large: 1.4 rem;
+    --radius-small: 0.5rem;
+    --radius-medium: 0.9rem;
+    --radius-large: 1.4rem;
     --content-width: 72rem;
 }
 
@@ -202,6 +202,7 @@ a:hover {
 .button:hover {
     background: var(--color-primary-dark);
     background-color: var(--color-primary-dark);
+    
 }
 
 .button-secondary {
@@ -260,23 +261,23 @@ a:hover {
     box-shadow: var(--shadow-card);
 }
 
-.offer-card__visual {
+.offer-card_visual {
     min-height: 8rem;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
 }
 
-.offer-card__content {
+.offer-card_content {
     display: flex;
     flex: 1;
     flex-direction: column;
     padding: 1.25rem;
 }
 
-.offer-card__meta {
+.offer-card_meta {
     color: var(--color-muted);
 }
 
-.offer-card__price {
+.offer-card_price {
     margin-block-start: auto;
     font-size: 1.15rem;
 }
